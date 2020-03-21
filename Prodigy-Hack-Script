@@ -1,3 +1,5 @@
+elert("Hack Injected")
+elert("You Are Using GameHackerC's Prodigy Hack!")
 function closeit(){ 
 prodigydiv.remove()
 } 
