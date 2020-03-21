@@ -1,8 +1,6 @@
 function closeit(){ 
 prodigydiv.remove()
 } 
-elert("Hack Injected")
-elert("You Are Using GameHackerC's Prodigy Hack!")
 setTimeout("closeit", 3000);
 function FreeMembership(){
 PIXI.game.prodigy.player.it=true
