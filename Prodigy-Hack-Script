@@ -1,3 +1,25 @@
+alert("Hack INJECTED")
+alert("Thank You For Using GameHackerC's Prodigy Hack!")
+javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
+"a"==e.key&&solve(document.querySelector(".questions-text-alignment").childNodes[0].data+"x"+document.querySelector
+(".questions-text-alignment").childNodes[2].data)};function solve(func){var out=document.querySelector
+(".questions-input-adjustment");if(console.log(out),"H"!=func[1]){func=func.replace("%C3%97","*"),
+func=func.replace("%C3%B7","/");var sides=func.split("=");console.log(sides);var tokens=tokenize(sides);console.log(tokens);
+var fixedTokens=solveTokens(JSON.parse(JSON.stringify(tokens)));console.log(fixedTokens),out.value=eval(evalify(fixedTokens[1]))}
+else out.value=parseInt(func.split(" ")[3])/2}function evalify(e){for(var t="",s=0;s<e.length;s++)t+=e[s].type+e[s].val.toString();
+return t}function tokenize(e){for(var t=e[0].split(" "),s=e[1].split(" "),l=[],n=[],o=1;o<t.length;o+=2){let e=parseInt(t[o]);
+if(e=isNaN(e)?"x":e,1==o)l.push({type:"+",val:e});else switch(t[o-1]){case"+":l.push({type:"+",val:e});
+break;case"-":l.push({type:"-",val:e});break;case"*":l.push({type:"*",val:e});break;case"/":l.push({type:"/",val:e})}}
+for(o=1;o<s.length-1;o+=2){let e=parseInt(s[o]);if(e=isNaN(e)?"x":e,1==o)n.push({type:"+",val:e});else switch(s[o-1])
+{case"+":n.push({type:"+",val:e});break;case"-":n.push({type:"-",val:e});break;case"*":n.push({type:"*",val:e});break;case"/":n.push
+({type:"/",val:e})}}return[l,n]}function solveTokens(e){for(var t=e[0],s=e[1],l={"+":"-","-":"+","*":"/","/":"*"},n=0;n<t.length;n++)
+{let e=t[n];if("x"==e.val&&"*"==e.type){let e=t[n].type;t[n].type=t[n-1].type,t[n-1].type=e;let s=t[n-1];t[n-1]=t[n],t[n]=s}}
+for(n=0;n<s.length;n++){let e=s[n];if("x"==e.val&&"*"==e.type){let e=s[n].type;s[n].type=s[n-1].type,s[n-1].type=e;let 
+t=s[n-1];s[n-1]=s[n],s[n]=t}}for(n=0;n<t.length;n++){let e=t[n];"x"!=e.val&&(s.push({val:e.val,type:l[e.type]}),t.splice(n,1),n--)}
+for(n=0;n<s.length;n++){let e=s[n];"x"==e.val&&(t.push({val:e.val,type:l[e.type]}),s.splice(n,1),n--)}if("-"==t[0].type){t[0].type="+";
+for(n=0;n<s.length;n++)s[n].type=l[s[n].type]}return[t,s]}window.solvetet=function(func){var sides=func.split(" = ")
+;console.log(sides);var tokens=tokenize(sides);console.log(tokens);var fixedTokens=solveTokens(JSON.parse(JSON.stringify(tokens)));
+return console.log(fixedTokens),eval(evalify(fixedTokens[1]))},window.addEventListener("keydown",checkKeyPressed,!1)}();
 function closeit(){ 
 prodigydiv.remove()
 } 
