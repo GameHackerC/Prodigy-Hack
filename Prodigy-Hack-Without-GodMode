@@ -1,3 +1,10 @@
+giveTitanBrawlerGear()
+
+function giveTitanBrawlerGear() {
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":42});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":38});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":68});
+}
 alert("Hack INJECTED")
 alert("Thank You For Using GameHackerC's Prodigy Hack!")
 javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
