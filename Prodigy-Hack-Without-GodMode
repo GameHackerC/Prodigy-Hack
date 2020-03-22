@@ -1,6 +1,6 @@
-giveAllGear()
+giveAlotOfGear()
 
-function giveAllGear() {
+function giveAlotOfGear() {
 PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":1});
 PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":1});
 PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":1});
