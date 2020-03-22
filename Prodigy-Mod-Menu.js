@@ -75,6 +75,12 @@ function GodMode() {
 PIXI.game.prodigy.player.modifiers.damage=5000000;
 PIXI.game.prodigy.player.modifiers.maxHearts=5000000;
 }
+function LeaveBattle() {
+PIXI.game.prodigy.debugMisc.escapeBattle();
+}
+function FillEnergy() {
+PIXI.game.prodigy.debugMisc.setBattleEnergy(10);
+}
 function TeleportPlayer(e) {
 
     e = e || window.event;
@@ -146,7 +152,7 @@ var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.color = "black";
-prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red">|Close|</font> </a> <a href="PIXI.game.prodigy.debugMisc.escapeBattle();"><font color="red"> |Leave Battle|</font> </a><a href="javascript:window.PIXI.game.prodigy.user.source.data.level=100"><font color="red">|Level 100 Player|</font><a href="javascript:GodMode();"> <font color="red">|God Mode|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font> <a href="PIXI.game.prodigy.debugMisc.setBattleEnergy(10);"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Level 100 Pets|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies|</font></a>';
+prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red">|Close|</font> </a> <a href="javascript:LeaveBattle();"><font color="red"> |Leave Battle|</font></a><a href="javascript:window.PIXI.game.prodigy.user.source.data.level=100"><font color="red">|Level 100 Player|</font><a href="javascript:GodMode();"> <font color="red">|God Mode|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font> <a href="javascrpt:FillEnergy();"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Level 100 Pets|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies|</font></a>';
 javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
 "a"==e.key&&solve(document.querySelector(".questions-text-alignment").childNodes[0].data+"x"+document.querySelector
 (".questions-text-alignment").childNodes[2].data)};function solve(func){var out=document.querySelector
