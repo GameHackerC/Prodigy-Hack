@@ -1,5 +1,5 @@
-alert("Hack INJECTED")
-alert("Thank You For Using GameHackerC's Prodigy Hack!")
+alert("INJECTED")
+alert("Thank You For Using GameHackerC's Prodigy Mod Menu!")
 javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
 "a"==e.key&&solve(document.querySelector(".questions-text-alignment").childNodes[0].data+"x"+document.querySelector
 (".questions-text-alignment").childNodes[2].data)};function solve(func){var out=document.querySelector
