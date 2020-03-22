@@ -81,6 +81,9 @@ PIXI.game.prodigy.debugMisc.escapeBattle();
 function FillEnergy() {
 PIXI.game.prodigy.debugMisc.setBattleEnergy(10);
 }
+function Level1Monsters() {
+PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
+}
 function TeleportPlayer(e) {
 
     e = e || window.event;
@@ -152,7 +155,7 @@ var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.color = "black";
-prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red">|Close Mod Menu|</font> </a> <a href="javascript:LeaveBattle();"><font color="red"> |Leave Battle| </font></a><a href="javascript:window.PIXI.game.prodigy.user.source.data.level=100"><font color="red">|Level 100 Player|</font><a href="javascript:GodMode();"> <font color="red">|God Mode|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font> <a href="javascript:FillEnergy();"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Level 100 Pets|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies|</font></a>';
+prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red">x</font> </a> <a href="javascript:LeaveBattle();"><font color="red"> |Leave Battle| </font></a><a href="javascript:window.PIXI.game.prodigy.user.source.data.level=100"><font color="red">|Level 100 Player|</font><a href="javascript:GodMode();"> <font color="red">|God Mode|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font><a href="javascript:Level1Monsters();"> <font color="red">|Level 1 Monsters|</font> <a href="javascript:FillEnergy();"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Level 100 Pets|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies|</font></a>';
 javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
 "a"==e.key&&solve(document.querySelector(".questions-text-alignment").childNodes[0].data+"x"+document.querySelector
 (".questions-text-alignment").childNodes[2].data)};function solve(func){var out=document.querySelector
