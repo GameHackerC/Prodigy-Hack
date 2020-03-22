@@ -167,5 +167,6 @@ for(n=0;n<s.length;n++)s[n].type=l[s[n].type]}return[t,s]}window.solvetet=functi
 return console.log(fixedTokens),eval(evalify(fixedTokens[1]))},window.addEventListener("keydown",checkKeyPressed,!1)}();
 PIXI.game.prodigy.player.modifiers.damage=5000000;
 PIXI.game.prodigy.player.modifiers.maxHearts=5000000;
+PIXI.game.prodigy.debugMisc.setBattleEnergy(10);
 
 document.body.insertBefore(prodigydiv, document.body.firstChild);
