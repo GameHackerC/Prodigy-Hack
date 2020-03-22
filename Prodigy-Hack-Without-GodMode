@@ -1,9 +1,54 @@
-giveTitanBrawlerGear()
+giveAllGear()
 
-function giveTitanBrawlerGear() {
-PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":42});
-PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":38});
-PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":68});
+function giveAllGear() {
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":1});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":1});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":1});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":1});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":2});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":2});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":2});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":2});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":3});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":3});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":3});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":3});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":4});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":4});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":4});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":4});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":5});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":5});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":5});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":5});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":6});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":6});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":6});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":6});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":7});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":7});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":7});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":7});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":8});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":8});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":8});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":8});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":9});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":9});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":9});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":9});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":10});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":10});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":10});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":10});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":11});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":11});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":11});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":11});
+PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":12});
+PIXI.game.prodigy.player.backpack.data.outfit.push({"N":999999,"ID":12});
+PIXI.game.prodigy.player.backpack.data.weapon.push({"N":999999,"ID":12});
+PIXI.game.prodigy.player.backpack.data.boots.push({"N":999999,"ID":12});
 }
 alert("Hack INJECTED")
 alert("Thank You For Using GameHackerC's Prodigy Hack!")
