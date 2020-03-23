@@ -88,10 +88,8 @@ function FullyHeal() {
 PIXI.game.prodigy.player.heal(9999999999999999999999999999999999999999999999);
 }
 function PickLevel() {
-  var person = prompt("What Level Would You Like To Be?");
-  if (person == 100) {
-javascript:window.PIXI.game.prodigy.user.source.data.level=100;
-  }
+  Level = prompt("What Level Would You Like To Be?");
+javascript:window.PIXI.game.prodigy.user.source.data.level=(Level);
 }
 function TeleportPlayer(e) {
 
