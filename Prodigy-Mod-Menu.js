@@ -91,8 +91,6 @@ function PickLevel() {
   var person = prompt("What Level Would You Like To Be?");
   if (person == 100) {
 javascript:window.PIXI.game.prodigy.user.source.data.level=100;
-  if (person == 99) {
-javascript:window.PIXI.game.prodigy.user.source.data.level=99;
   }
 }
 function TeleportPlayer(e) {
