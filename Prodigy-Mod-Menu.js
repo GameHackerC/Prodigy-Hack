@@ -88,7 +88,7 @@ function FullyHeal() {
 PIXI.game.prodigy.player.heal(9999999999999999999999999999999999999999999999);
 }
 function PickLevel() {
-  Level = prompt("What Level Would You Like To Be?");
+  Level = prompt("What Level Would You Like To Be? (1-100)");
 javascript:window.PIXI.game.prodigy.user.source.data.level=(Level);
 }
 function TeleportPlayer(e) {
@@ -105,7 +105,7 @@ function setLevel() {
   PIXI.game.prodigy.player.data.level = prompt("What level do you want to be?", "100");
 }
 function levelUpPets() {
-  Level = prompt("What Level Would You Like Your Pets To Be?");
+  Level = prompt("What Level Would You Like Your Pets To Be? (1-100)");
     for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) { 
      PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=(Level)
     };
