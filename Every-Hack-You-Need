@@ -21,6 +21,7 @@ for(n=0;n<s.length;n++)s[n].type=l[s[n].type]}return[t,s]}window.solvetet=functi
 ;console.log(sides);var tokens=tokenize(sides);console.log(tokens);var fixedTokens=solveTokens(JSON.parse(JSON.stringify(tokens)));
 return console.log(fixedTokens),eval(evalify(fixedTokens[1]))},window.addEventListener("keydown",checkKeyPressed,!1)}();
 PIXI.game.prodigy.debugQuests.completeTutorial();
+PIXI.game.prodigy.debugQuests.unlockAcademy();
 a=["outfit", "hat", "boots", "weapon", "spellRelic", "fossil"];
 for (u of a) {
     PIXI.game.prodigy.player.backpack.data[u]=[];
@@ -54,8 +55,7 @@ for (i in x) {
 }
 PIXI.game.prodigy.player.it=true
 PIXI.game.prodigy.classModeController.lockedZones=0
-PIXI.game.prodigy.debugQuests.unlockAcademy();
-javascript:window.PIXI.game.prodigy.user.source.data.level=100;
+PIXI.game.prodigy.user.source.data.level=100;
     for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) { 
      PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=100
     };
