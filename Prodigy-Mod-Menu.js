@@ -72,8 +72,10 @@ PIXI.game.prodigy.player.backpack.data.hat.push({"N":999999,"ID":23});
 PIXI.game.prodigy.player.backpack.data.weapon.push({"N":1,"ID":47});
 }
 function GodMode() {
-PIXI.game.prodigy.player.modifiers.damage=5000000;
-PIXI.game.prodigy.player.modifiers.maxHearts=5000000;
+  GodModeDamage = prompt("How Much Do You Want To Multiply Your Damage By?") 
+  GodModeHealth = prompt("How Much Do You Want To Multiply Your Health By?") 
+PIXI.game.prodigy.player.modifiers.damage=(GodModeDamage);
+PIXI.game.prodigy.player.modifiers.maxHearts=(GodModeHealth);
 }
 function LeaveBattle() {
 PIXI.game.prodigy.debugMisc.escapeBattle();
@@ -84,8 +86,8 @@ PIXI.game.prodigy.debugMisc.setBattleEnergy(10);
 function Level1Monsters() {
 PIXI.game.prodigy.battle.constructor.MOD_DEFAULTS.level = 1;
 }
-function FullyHeal() {
-PIXI.game.prodigy.player.heal(9999999999999999999999999999999999999999999999);
+function Heal() {
+PIXI.game.prodigy.player.heal();
 }
 function PickLevel() {
   Level = prompt("What Level Would You Like To Be? (1-100)                                       *Must Get Into A Battle To Save Level Change");
@@ -164,7 +166,7 @@ var prodigydiv = document.createElement("prodigydiv");
 prodigydiv.style.width = "100px";
 prodigydiv.style.height = "100px";
 prodigydiv.style.color = "black";
-prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red"> |X|</font> </a> <a href="javascript:LeaveBattle();"><font color="red"> |Leave Battle| </font></a><a href="javascript:PickLevel();"><font color="red">|Pick Level Player|</font><a href="javascript:GodMode();"> <font color="red">|God Mode|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font><a href="javascript:FullyHeal();"><font color="red"> |Fully Heal| </font></a><a href="javascript:FillEnergy();"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Pick Level Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies| </font></a>';
+prodigydiv.innerHTML = '<a href="javascript:prodigydiv.remove();"> <font color="red"> |X|</font> </a> <a href="javascript:LeaveBattle();"><font color="red"> |Leave Battle| </font></a><a href="javascript:PickLevel();"><font color="red">|Pick Level Player|</font><a href="javascript:GodMode();"> <font color="red">|Multiply Player|</font> </a><a href="javascript:FreeMembership();"> <font color="red">|Free Membership|</font><a href="javascript:Heal();"><font color="red"> |Heal| </font></a><a href="javascript:FillEnergy();"><font color="red">|Fill Energy|</font></a> <a href="javascript:PIXI.game.prodigy.debugMisc.getAllPets();"><font color="red">|Get All Pets|</font></a><a href="javascript:levelUpPets()"><font color="red"> |Pick Level Pets|</font></a><a href="javascript:FreeAtSchool()"><font color="red"> |Unlock All Zones|</font></a><a href="javascript:getallFollow()"> <font color="red">|Get All Buddies|</font></button><a href="javascript:getallItem()"> <font color="red">|Get All Items|</font></a><a href="javascript:getallCurrency()"> <font color="red">|Get All Currencies| </font></a>';
 javascript:!function(){var checkKeyPressed=e=>{console.log(e.key),
 "a"==e.key&&solve(document.querySelector(".questions-text-alignment").childNodes[0].data+"x"+document.querySelector
 (".questions-text-alignment").childNodes[2].data)};function solve(func){var out=document.querySelector
